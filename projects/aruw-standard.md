@@ -1,7 +1,7 @@
 ---
 layout: inner
 title: ARUW Standard robot
-permalink: /standard/
+permalink: /aruw-standard/
 ---
 
 ## Standard
@@ -25,7 +25,7 @@ Standard Squad spent many long hours in the machine shop, on the lathe, mill, an
 
 ### Dividers
 <img src="/img/Standard/dividers.jpg" alt="build" style="float: left; width: 300px; margin-right: 30px;" />
-I rapidly prototyped and iteratively designed	 spring-tensioned dividers using ABS sheets and 3D printed TPU to decrease competition’s computer vision detection rate. I went through dozens of iterations with only a couple weeks left until robots ship, but I was able to create a design that withstood golf ball shots and still sprung back to center. 
+I rapidly prototyped and iteratively designed spring-tensioned dividers using ABS sheets and 3D printed TPU to decrease competition’s computer vision detection rate. I went through dozens of iterations with only a couple weeks left until robots ship, but I was able to create a design that withstood golf ball shots and still sprung back to center. 
 
 ### Driver
 I was selected as the driver for 2025 RMNA 1v1 competition. I had about a week, right before robots got shipped, to learn the keybinds, strategy, and how to fix common problems. During the competition, I worked hard to develop custom strategies for each team while contributing to robot fixes. This resulted in our team placing third in the 1v1 competition. 
