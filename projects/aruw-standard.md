@@ -22,7 +22,6 @@ For carbon fiber, the team created layups and routed all the carbon fiber used f
 Standard Squad spent many long hours in the machine shop, on the lathe, mill, and bandsaw. We had a sponsor waterjet our sheet metal. 
 
 
-
 ### Dividers
 <img src="/img/Standard/dividers.jpg" alt="build" style="float: left; width: 300px; margin-right: 30px;" />
 I rapidly prototyped and iteratively designed spring-tensioned dividers using ABS sheets and 3D printed TPU to decrease competition’s computer vision detection rate. I went through dozens of iterations with only a couple weeks left until robots ship, but I was able to create a design that withstood golf ball shots and still sprung back to center. 

@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: "Hi! It's Sarah."
 email: 'wusarah42@gmail.com'
-description: "I'm a mechanical engineering student at the University of Washington studying robotics and aerospace engineering."
+description: "I'm a mechanical engineering student at the University of Washington."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "sarhaw.github.io/" # the base hostname & protocol for your site, e.g. https://example.com
 linkedin_username: 'sarwu'
