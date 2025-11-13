@@ -25,10 +25,10 @@ $secondary: #FF7B7B;
 /*--------------------------------------------------------------
 	1.0 Defaults
 --------------------------------------------------------------*/
-
+//page width
 @media (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 1100px;
   }
 }
 
@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 article {
-  margin: 5em 0;
+  margin: 3em 0;
 }
 
 p {
@@ -60,8 +60,66 @@ a {
   }
 }
 
+/* make images scale responsively but not force full-width */
 img {
-  width: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.img-right {
+  float: right;
+  margin-left: 5px;
+  width: 335px;        /* adjust percent for desired size */
+  max-width: 480px;  /* cap on very wide screens */
+}
+
+.img-left {
+  float: left;
+  margin-right: 5px;
+  width: 335px;
+  max-width: 480px;
+}
+
+// ...existing code...
+
+/* two-column layout: text + image (responsive) */
+.two-col {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.two-col .half {
+  flex: 1 1 50%;
+  min-width: 260px; /* ensures stacking on small screens */
+}
+
+.two-col .half img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* optional: center vertically */
+.two-col.center-vert {
+  align-items: center;
+}
+
+/* make columns full width on small screens */
+@media (max-width: 768px) {
+  .two-col .half { flex-basis: 100%; }
+}
+
+/* half-screen split (each side fills half viewport height) */
+.half-screen {
+  display: flex;
+  min-height: 50vh;
+}
+.half-screen .half {
+  flex: 1;
+  padding: 1.5rem;
 }
 
 button.btn, input.btn {

@@ -16,7 +16,7 @@ The bumper was made by bending 0.75in box tubes into two 580mm diameter semicirc
 
 ### Manufacturing
 
-<img src="/img/Standard/CF.jpg" alt="build" style="float: right; width: 200px; margin-right: 30px;" />
+<img src="/img/Standard/CF.jpg" alt="Sarah" class="img-right" />
 For carbon fiber, the team created layups and routed all the carbon fiber used for the robots. Cutting the carbon fiber was an extensive process, with each session taking 4-5 hours and only producing 1 or 2 sheets. 
 
 Standard Squad spent many long hours in the machine shop, on the lathe, mill, and bandsaw. We had a sponsor waterjet our sheet metal. 
