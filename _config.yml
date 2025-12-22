@@ -1,32 +1,19 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: "Hi! It's Sarah."
+title: "Sarah Wu"
 email: 'wusarah42@gmail.com'
-description: "I'm a mechanical engineering student at the University of Washington."
+description: "Portfolio - mechanical design, 3D printing, robotics"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "sarhaw.github.io/" # the base hostname & protocol for your site, e.g. https://example.com
 linkedin_username: 'sarwu'
 github_username: 'sarhaw'
-# medium_username: 'blog.jamigibbs.com'
+
 
 # Build settings
 markdown: kramdown
-# theme: phantom # Uncomment once published to RubyGems
+theme: minima # Uncomment once published to RubyGems
 plugins:
   - jekyll-paginate
+
 
 ############################################################
 # Site configuration for the Jekyll 3 Pagination Gem
@@ -102,4 +89,4 @@ enable_nav: true
 nav_item:
   - { url: '/', text: 'Home' }
   - { url: '/about', text: 'About' }
-  - { url: '/other', text: 'Other' }
+  # - { url: '/other', text: 'Other' }

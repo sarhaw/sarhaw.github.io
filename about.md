@@ -13,8 +13,7 @@ I'm an engineering student specializing in controls, product design, and mechatr
 <br><br>
 Outside of work, I like illustrating, rock climbing, scrapbooking, hip hop dancing, playing rhythm games (project sekai!), and drinking banana cream matcha.
 <br><br>
-{% include contact.html %}
-{% include contact-modal.html %}
+My email: wusarah42@gmail.com
 <br><br>
 
 #### What CAD software do you use?

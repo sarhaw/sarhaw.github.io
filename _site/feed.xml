@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sarah Wu</title>
+    <description>Portfolio - mechanical design, 3D printing, robotics</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 22 Dec 2025 03:10:46 -0800</pubDate>
+    <lastBuildDate>Mon, 22 Dec 2025 03:10:46 -0800</lastBuildDate>
+    <generator>Jekyll v3.10.0</generator>
+    
+      <item>
+        <title>ARUW Sentry Robot (WIP)</title>
+        <description>
+</description>
+        <pubDate>Tue, 14 Oct 2025 10:10:00 -0700</pubDate>
+        <link>http://localhost:4000/robotics/2025/10/14/Sentry.html</link>
+        <guid isPermaLink="true">http://localhost:4000/robotics/2025/10/14/Sentry.html</guid>
+        
+        <category>Research</category>
+        
+        <category>ProductDesign</category>
+        
+        <category>Solidworks</category>
+        
+        <category>AdditiveManufacturing</category>
+        
+        
+        <category>robotics</category>
+        
+      </item>
+    
+      <item>
+        <title>Voron 0.2</title>
+        <description>
+</description>
+        <pubDate>Tue, 14 Oct 2025 10:00:00 -0700</pubDate>
+        <link>http://localhost:4000/printer/2025/10/14/Voron02.html</link>
+        <guid isPermaLink="true">http://localhost:4000/printer/2025/10/14/Voron02.html</guid>
+        
+        <category>3Dprinter</category>
+        
+        <category>RaspberryPi</category>
+        
+        
+        <category>printer</category>
+        
+      </item>
+    
+      <item>
+        <title>Rapid Everting Tamponade</title>
+        <description>
+</description>
+        <pubDate>Sun, 31 Aug 2025 07:15:00 -0700</pubDate>
+        <link>http://localhost:4000/research/2025/08/31/BRL_RET.html</link>
+        <guid isPermaLink="true">http://localhost:4000/research/2025/08/31/BRL_RET.html</guid>
+        
+        <category>Research</category>
+        
+        <category>ProductDesign</category>
+        
+        <category>Solidworks</category>
+        
+        <category>AdditiveManufacturing</category>
+        
+        
+        <category>research</category>
+        
+      </item>
+    
+      <item>
+        <title>ARUW Standard Robot</title>
+        <description>
+</description>
+        <pubDate>Mon, 30 Jun 2025 07:15:00 -0700</pubDate>
+        <link>http://localhost:4000/robotics/2025/06/30/Standard.html</link>
+        <guid isPermaLink="true">http://localhost:4000/robotics/2025/06/30/Standard.html</guid>
+        
+        <category>Solidworks</category>
+        
+        <category>AdditiveManufacturing</category>
+        
+        <category>Mill</category>
+        
+        <category>Lathe</category>
+        
+        <category>Soldering</category>
+        
+        
+        <category>robotics</category>
+        
+      </item>
+    
+  </channel>
+</rss>

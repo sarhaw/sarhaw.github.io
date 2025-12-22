@@ -15,12 +15,18 @@
 
 @import '../_sass/bootstrap';
 @import '../_sass/mixins';
-
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 $primary: #0a0a0a;
 $secondary: #FF7B7B;
 
-%opensans { font-family: 'Open Sans', sans-serif; }
-%merriweather { font-family: 'Merriweather', serif; }
+%opensans { 
+  font-family: 'Segoe UI', sans-serif; 
+  font-weight: 400;
+}
+%merriweather { 
+  font-family: 'Lexend', sans-serif; 
+  font-weight: 300;
+}
 
 /*--------------------------------------------------------------
 	1.0 Defaults
@@ -36,20 +42,22 @@ body {
   background-color: #e9edf0;
   @extend %opensans;
   -webkit-font-smoothing: antialiased;
+  //font-size: 1.2em;
 }
 
 h1, h2, h3, h4, h5, h6 {
   @extend %merriweather;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 article {
   margin: 3em 0;
 }
 
-p {
+p, li {
   line-height: 1.8;
-  font-size: 1.3em;
+  //font-size: inherit;
+  font-size: 1.2em; //body font size
 }
 
 a {
@@ -193,10 +201,11 @@ button.btn, input.btn {
     width: 100%;
   }
   h1 {
-    font-size: 48px;
+    font-size: 36px;
   }
   p {
     margin: 2em 0 4em 0;
+    font-size: 24px;
   }
   .hero-buttons {
     margin: 0 auto;
@@ -225,7 +234,7 @@ button.btn, input.btn {
   margin: 0 20px;
   label {
     font-weight: 300;
-    font-size: 22px;
+    font-size: 16px;
     margin-bottom: 0.5em;
   }
   textarea, input {
@@ -239,7 +248,7 @@ button.btn, input.btn {
     margin: 0;
   }
   .form-control {
-    padding: 25px;
+    padding: 22px;
     font-size: 16px;
   }
   input[type="submit"]{
@@ -345,6 +354,7 @@ button.btn, input.btn {
       @include bp-xsmall {
         width: 100%;
       }
+      font-size: 20px
     }
     button{
       font-size: 16px;

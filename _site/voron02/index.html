@@ -1,0 +1,169 @@
+<!doctype html>
+<head>
+
+  <!-- Meta -->
+  <meta charset="utf-8">
+
+  <title>ARUW Sentry robot - Sarah Wu</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="Sarah Wu - Portfolio - mechanical design, 3D printing, robotics" href="http://localhost:4000/feed.xml">
+  <link rel="alternate" type="application/atom+xml" title="Sarah Wu - Portfolio - mechanical design, 3D printing, robotics" href="http://localhost:4000/atom.xml">
+
+  <!-- Favicons -->
+  <link rel="icon" href="http://localhost:4000/img/favicon.png">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700|Merriweather:400,300,300italic,400italic,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/animate.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body class="">
+
+<div class="main container" id="top">
+
+  
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">Sarah Wu</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              
+                <li>
+                  <a href="/">Home</a>
+                </li>
+              
+                <li>
+                  <a href="/about">About</a>
+                </li>
+              
+            </ul>
+          </div>
+      </div>
+  </nav>
+  
+
+
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+
+          <h1 id="voron-02">Voron 0.2</h1>
+<p><img src="/img/Voron0.2/voron_no_tophat.jpg" alt="Voron 0.2" /></p>
+
+<p>Below documents the process of my build of the Voron 0.2 and helpful resources I found.</p>
+
+<h2 id="formbot-kit">Formbot Kit</h2>
+<p>I used <a href="https://www.formbot3d.com/products/voron-v02-corexy-3d-printer-kit-with-high-quality-parts?VariantsId=11024">this formbot kit</a>.</p>
+
+<p>The kit itself contained all the parts I needed. All of the wires were pre-crimped, packaged separately and labeled clearly, and there were foam cutouts to house each component. The pre-cut and crimped wires gave me less flexibility on electronics placement because the wire lengths were fixed.</p>
+
+<h4 id="filament">Filament</h4>
+<p>For filament, I used Polymaker ASA in Natural and Army Green. I used <a href="www.3dprinter-color-configurator.com/voron-color-configurator.html">this website</a> to help me visualize my color combinations.</p>
+
+<ul>
+  <li><a href="https://docs.vorondesign.com/sourcing.html">Print settings</a></li>
+  <li><a href="https://docs.google.com/spreadsheets/d/1MSgTiXazJwyfcTe7QqNIMWwQ_lfM8cOXmiMWPZ2HkEI/edit?gid=0#gid=0">Printed parts list</a></li>
+</ul>
+
+<h2 id="mechanical-assembly">Mechanical Assembly</h2>
+<p>The mechanical assembly of the Voron 0.2 was fairly self-explanatory, as Voron has extensive <a href="https://docs.vorondesign.com/">documentation</a> and a clear <a href="https://raw.githubusercontent.com/VoronDesign/Voron-0/Voron0.2/Manuals/VORON_V0.2_Assembly_Manual.pdf">manual</a>.</p>
+
+<p>The Formbot kit contained two mods: the kirigami bed and umbillical cord. Both are popular community mods but aren’t reflected in the manual.</p>
+
+<ul>
+  <li><a href="https://docs.vorondesign.com/">Kirigami bed</a></li>
+  <li><a href="https://github.com/VoronDesign/Voron-Hardware/tree/master/V0-Umbilical">Umbilical</a></li>
+</ul>
+
+<p>Before starting, it’s recommended to regrease your linear rails, which involves cleaning it with isopropyl alcohol and adding your own grease to it. The grease that comes with the linear rail is just to protect it during transit, but we want to replace it with better quality grease. I used the Super Lube 21030, but any lube with NLGI Grade 1 or 2 should work.</p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=UYvhYjkBFTY">Youtube video on process</a></li>
+  <li><a href="https://docs.ldomotors.com/en/guides/rail_grease_guide">LDO motors documentation</a></li>
+  <li><a href="https://www.amazon.com/dp/B000XBH9HI?ref=ppx_yo2ov_dt_b_fed_asin_title&amp;th=1">Amazon link to lube</a></li>
+</ul>
+
+<p>The Formbot kit contained all the parts I needed, but I had to get tools (allen key set, multimeter) for the build. I also purchased a linear rail because I accidentally slid off the carriage from the rail and lost a lot of the ball bearings.</p>
+
+<h2 id="wiring">Wiring</h2>
+<p>Wiring was also fairly self-explanatory, as the pinouts for the BTT SKR Pico and BTT Pi are both available on the BTT GitHub. The wires were crimped and labeled, which made the process a lot easier. I checked my progress along the way using my multimeter, and turned on and tested the SKR Pico before connecting it to the Pi.</p>
+
+<ul>
+  <li><a href="https://docs.vorondesign.com/build/electrical/v02_skr_pico_wiring.html">SKR Pico Pinout</a></li>
+  <li><a href="https://github.com/bigtreetech/SKR-Pico/blob/master/BTT%20SKR%20Pico%20V1.0%20Instruction%20Manual.pdf">SKR Pico Github</a></li>
+  <li><a href="https://raw.githubusercontent.com/SrgntBallistic/Formbot-V0/v0.2/Images/Wiring/formbot-voron-v0.2r1-kit-wiring-diagram.png">Wiring Diagram by SrgntBallistic</a></li>
+</ul>
+
+<h2 id="software">Software</h2>
+<p>It was the roughest part for me</p>
+
+<h2 id="resources">Resources</h2>
+<p><a href="https://ellis3dp.com/Print-Tuning-Guide/articles/misconceptions.html">Tuning guide</a>
+<a href="https://github.com/VoronDesign/Voron-0/tree/Voron0.2r1">Voron 0.2 Github</a></p>
+
+
+        </div>
+      </div>
+    </div>
+  </article>
+
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-xs-12 col-md-2 col-md-offset-1">
+            <p class="text-muted text-left "><a href="http://localhost:4000">© 2025 Sarah Wu</a></p>
+          </div>
+
+          <div class="col-xs-12 col-md-6 col-md-offset-2">
+            <a class="section-jump" href="#top">
+              <i class="fa fa-angle-up fa-3x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- .main.container -->
+
+    <!-- JavaScript -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://localhost:4000/js/wow.min.js"></script>
+    <script src="http://localhost:4000/js/app.js"></script>
+
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', ' UA-9999999-99', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+    </body>
+</html>
+
