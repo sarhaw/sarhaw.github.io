@@ -8,7 +8,7 @@ permalink: /aruw-sentry/
 
 # Sentry
 
-> *Note: This is an ongoing project. Current status is finishing CAD to start manufacturing. Please note that some sections are currently being documented.*
+> *Note: This is an ongoing project. Current status is manufacturing CF plates and waterjetting aluminum sheets. Please note that some sections are currently being documented.*
 
 ---
 
@@ -47,11 +47,12 @@ Design requirements for this year include:
 
 The turret major contains all the major electronics in the robot, serves as a base for the two turret minors, and houses the hopper, agitator and feeding system. The structure consists of a top and bottom carbon fiber plate held up by four standoffs and six M4x120 screws. The electronics are mounted vertically for easier wiring access.
 
-The diameter is only 365mm this year (compared to about 420 past year), with the main reason being pushing the bottom plate of turret major down past the agitators. In the past, the bottom plate lat on the same plane as the top of the agitators, leaving ltos of empty space under the bottom plate. By shifting the bottom plate down, we were able to significantly decrease the diameter of turret minor, as well as mount electronics vertically which should allow for better wiring. The half of turret major without the hoppers can be accessed by removing one large cover, allowing for easy wiring, debugging and testing. 
+The diameter of turret major is only 365mm this year (compared to about 420 past year), with the main reason being pushing the bottom plate of turret major down past the agitators. In the past, the bottom plate lat on the same plane as the top of the agitators, leaving ltos of empty space under the bottom plate. By shifting the bottom plate down, we were able to significantly decrease the diameter of turret minor, as well as mount electronics vertically which should allow for better wiring. The half of turret major without the hoppers can be accessed by removing one large cover, allowing for easy wiring, debugging and testing. 
 
-We heavily reduced the chassis diameter and weight compared to last year. The weight is still unknown because the CAD is still in progress but we decreased the chassis diameter  from 680 to 550mm. The main reason for this is because we expanded the height of turret major down to below the agitators, which allowed it to be a smaller diameter, and the chassis below it to be smaller as well. 
+We heavily reduced the chassis diameter and weight compared to last year. The weight is now 18.6kg compared to past year's 23kg, and we decreased the chassis diameter from 680 to 585mm. One of the main reasons for this is because we expanded the height of turret major down to below the agitators, which allowed it to be a smaller diameter, and the chassis below it to be smaller as well. We also only have one turret minor instead of two. But most importantly, we kept weight savings in mind during the entire design process, opting for lighter plates when possible and doing calculations on the stresses a part will be under and need to withstand. 
 
 ---
+
 ## 3. V2 Changes
 
 <table>
@@ -66,7 +67,10 @@ With the new rules, we also took the opportunity to heavily skeletonize turret m
 
 Main changes:   
 - Removed turret minor
-- Hopper capacity increased from 500 to 800
+- Hopper capacity increased from 500 to 900
 - Removed most of major top plate, leaving only the minor and hopper support structure
 
 ---
+
+## 4. Manufacturing
+We made sure to design for easy manufacturing and assembly. This is why most of our parts are waterjet or 3D printed, leaving only the turret major and chassis standoffs, aluminum inserts in the carbon fiber neck, the 6020 motor plate, and belt tensioners to require machine shop tools usage. We used two UW waterjets and Omax's facilities in Kent, WA for the rest of the parts. We used a mix of PLA and ASA for our 3D printed parts, defaulting to PLA and using ASA for only high stress parts.

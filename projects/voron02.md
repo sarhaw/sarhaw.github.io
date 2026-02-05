@@ -44,8 +44,17 @@ Wiring was also fairly self-explanatory, as the pinouts for the BTT SKR Pico and
 - [SKR Pico Github](https://github.com/bigtreetech/SKR-Pico/blob/master/BTT%20SKR%20Pico%20V1.0%20Instruction%20Manual.pdf)
 - [Wiring Diagram by SrgntBallistic](https://raw.githubusercontent.com/SrgntBallistic/Formbot-V0/v0.2/Images/Wiring/formbot-voron-v0.2r1-kit-wiring-diagram.png)
 
-## Software
-It was the roughest part for me
+## Software Config
+It was the roughest part for me, but there are plenty of resources online.
+- [Klipper Web Interfaces](https://docs.vorondesign.com/build/software/)
+- [Klipper Flashing](https://github.com/bigtreetech/SKR-Pico/tree/master/Klipper)
+- [Klipper Flashing (more)](https://docs.vorondesign.com/build/software/skrPico_klipper.html)
+- [Linux Terminal SSH](https://docs.vorondesign.com/build/software/ssh.html)
+- [V0 Display](github.com/VoronDesign/Voron-Hardware/blob/master/V0_Display/Documentation/Setup_and_Flashing_Guide.md)
+
+## Tuning
+
+
 
 ## Resources
 [Tuning guide](https://ellis3dp.com/Print-Tuning-Guide/articles/misconceptions.html)
