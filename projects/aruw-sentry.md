@@ -22,7 +22,9 @@ permalink: /aruw-sentry/
 
 [4. Manufacturing](#4-manufacturing)
 
-[5. Four Bar Suspension](#5-fourbar)
+[5. Ballpath Testing](#5-ballpath)
+
+[6. Four Bar Suspension](#6-four-bar)
 
 ---
 
