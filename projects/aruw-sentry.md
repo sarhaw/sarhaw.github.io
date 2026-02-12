@@ -80,12 +80,28 @@ Main changes:
 We made sure to design for easy manufacturing and assembly. This is why most of our parts are waterjet or 3D printed, leaving only the turret major and chassis standoffs, aluminum inserts in the carbon fiber neck, the 6020 motor plate, and belt tensioners to require machine shop tools usage. We used two UW waterjets and Omax's facilities in Kent, WA for the rest of the parts. We used a mix of PLA and ASA for our 3D printed parts, defaulting to PLA and using ASA for only high stress parts.
 
 ## 5. Ballpath testing
-<table>
- <tr> 
-  <td><img src="/img/Sentry/suspension_assembly.jpg" width="250" alt="Sentry Redesign 1" /></td>
-  <td><img src="/img/Sentry/suspension_forcemeter.jpg" width="250" alt="Sentry Redesign 2" /></td>
-  </tr>
-</table>
+<img src="/img/Sentry/ballpath_fulltest.jpg" alt="ballpath testing" style="float: right; width: 300px; margin-left: 30px;" />
+
+The Sentry ballpath was a critical system to test before assembly. In 2025, the failure of the ballpath was a major reason why the Sentry was unable to perform well. This year, I was tasked with verifying and testing the ballpath system so we could build the robot with confidence. 
+
+The ballpath consists of an agitator, ballpath that extends forwards then up, a GM6020 motor, the neck of the turret minor, and the firing system. The agitator is what drives the entire system, so having a short ballpath in both length and height is crucial for motor safety. The entire length of the ballpath has ptfe tubes lining the inside, to reduce friction. The only location where there aren't tubes is inside the 6020 motor, where the balls pass through the internal core. 
+
+From CAD and what was discussed in the Sentry design reviews, the requirements for the ballpath are:
+- Move balls up the ballpath at 30 Hz
+- Pitch 10 degrees up, 30 degrees down
+- Run without jamming for an entire match length (5 min)
+
+Over winter break, I spent multiple long days verifying those conditions. 
+
+<img src="/img/Sentry/ballpath_initialtest.jpg" alt="initial testing" style="float: left; width: 300px; margin-right: 30px;" />
+
+I initially started with this simple mockup of the design. I kept as many things as possible the same as what would be on the final robot, but due to some parts being impossible to assemble without waterjet carbon fiber and aluminum plates, I modified those interfacing parts while keeping the original design as much as possible. I also segmented the test to narrow down any failure points. After fixing print defects and misalignments, the initial test fed balls through very consistently.
+
+After that, I printed out and tested the entire ballpath, from agitator to turret minor. I had to make some janky prints in order to assemble the system, but after having the entire path printed, I marked the +10 and -30 degree pitches and started testing. It looked promising, until it noticeably failed at the extremes of its pitch. Having the full pitch range is crucial to hitting robots far across the field, on the elevated platform, or right against our bumpers. 
+
+After analyzing the ballpath, I realized where the jam condition likely was - the firing system pitch. There, the ptfe tubes flare out to provide a seamless transition into the barrel and flywheels. However, I noticed the steep flare out angle caused the tubes to be pushed inwards in the open gap between the flared piece and the rest of the neck, which was further aggravated at the extreme angles. I made the sweeps defining the ptfe tubes less steep to see if that would help.
+
+After testing, it did! I pushed the turret to +10 degrees and way past the -30 degrees and the balls flowed out like they were at a neutral angle. I ran the test for a couple minutes to verify consistency, for a couple trials as well. 
 
 ## 5. Four Bar Suspension
 ![fourbarsuspension](/img/Sentry/suspension_spread.jpg)
@@ -105,3 +121,7 @@ To combat this, I fit in two shocks in this year's design, to allow us to decrea
   <td><img src="/img/Sentry/suspension_forcemeter.jpg" width="250" alt="Sentry Redesign 2" /></td>
   </tr>
 </table>
+
+After assembling one suspension, we tested the effective spring force by hooking it to a force meter. One suspension module took 10.15kg of force to fully bottom out. Although tha, across 20mm of spring travel, was not enough energy absorption to absorb all of the energy from a drop test, our springs are not meant to do that. Otherwise a ridiculously stiff spring would be needed. That would be the role of the suspension's hard stop.
+
+We are currently manufacturing our custom omni wheels but after that, we will characterize and test the entire system. 
