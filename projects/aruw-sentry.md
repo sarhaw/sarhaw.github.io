@@ -77,7 +77,25 @@ Main changes:
 ---
 
 ## 4. Manufacturing
-We made sure to design for easy manufacturing and assembly. This is why most of our parts are waterjet or 3D printed, leaving only the turret major and chassis standoffs, aluminum inserts in the carbon fiber neck, the 6020 motor plate, and belt tensioners to require machine shop tools usage. We used two UW waterjets and Omax's facilities in Kent, WA for the rest of the parts. We used a mix of PLA and ASA for our 3D printed parts, defaulting to PLA and using ASA for only high stress parts.
+<img src="/img/Sentry/waterjet_al.jpg" alt="ballpath testing" style="float: right; width: 300px; margin-left: 30px;" />
+
+We made sure to design for easy manufacturing and assembly. This is why most of our parts are waterjet or 3D printed, leaving only the turret major and chassis standoffs, aluminum inserts in the carbon fiber neck, the 6020 motor plate, and belt tensioners to require machine shop tools usage. We used two UW waterjets and Omax's facilities in Kent, WA. 
+For the rest of the parts. We used a mix of PLA and ASA for our 3D printed parts, defaulting to PLA and using ASA only for high stress parts.
+
+We manufactured all of our carbon fiber plates ourselves. The team received donations of expired prepreg CF rolls from Boeing and the UW composites shop. Then, we: 
+1. Cut the sheets into 2'x2' and 1'x1' squares in both 0 degree and 45 degree weave orientations
+2. Bag the correct number of sheets of each orientation, based on the thickness of the plate
+3. Store bags in freezer until layup
+4. Create CF layups by stacking sheets in alternating orientations and rolling out any air in between
+5. Place sheet inside platen press for ~4 hours, checking in every 30 min or when it changes phases
+6. Waterjet CF sheets at Omax's facilities
+7. Post-process by sealing edges with superglue and drilling out any undersized holes
+
+<img src="/img/Sentry/cf_sheets.png" alt="ballpath testing" style="float: left; width: 300px; margin-right: 30px;" />
+
+To track all of our parts (totalling over a thousand) we have a manufacturing tracker in notion, with each part, quantity, material, manufacturing method, and status. By constantly updating those, we know the state of our progress at all times and know how to most efficiently use our time. We also bagged all of our screws beforehand, to verify that we have all the screws that we need. 
+
+This process is gruelling, with our squad members spending double or triple our usual meeting time in the lab during manufacturing season. But due to all of our committment, the manufacturing went as smooth as it could be. We were manufacturing so quickly that we were being blocked by the waterjet runs giving us new plates to work with. 
 
 ## 5. Ballpath testing
 <img src="/img/Sentry/ballpath_fulltest.jpg" alt="ballpath testing" style="float: right; width: 300px; margin-left: 30px;" />
@@ -108,7 +126,7 @@ After testing, it did! I pushed the turret to +10 degrees and way past the -30 d
 
 The four bar suspension was designed over summer 2025 and built in Feburary 2026. The suspension is required for our robots due to there being bumps in the game field, and the Chinese version of the game having a 2ft drop test. Otherwise, design requirements are as follows: 
 - Lighter than previous year
-- Smaller
+- Smaller (height, width)
 - Stiffer (better stability on solid ground)
 - Use less stiff springs to maintain shock quality
 

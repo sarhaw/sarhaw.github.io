@@ -5,4 +5,4 @@ Theme: Minimal
 
 Heavily forked from ![Phantom](https://github.com/jamigibbs/phantom)
 
-with tweaks
+With edits to font, layout, etc. 
