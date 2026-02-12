@@ -71,7 +71,7 @@
 <h1 id="sentry">Sentry</h1>
 
 <blockquote>
-  <p><em>Note: This is an ongoing project. Current status is finishing CAD to start manufacturing. Please note that some sections are currently being documented.</em></p>
+  <p><em>Note: This is an ongoing project. Current status is manufacturing CF plates and waterjetting aluminum sheets. Please note that some sections are currently being documented.</em></p>
 </blockquote>
 
 <hr />
@@ -83,6 +83,10 @@
 <p><a href="#2-turret-major">2. Turret Major</a></p>
 
 <p><a href="#3-v2-changes">3. V2 Changes</a></p>
+
+<p><a href="#4-manufacturing">4. Manufacturing</a></p>
+
+<p><a href="#5-fourbar">5. Four Bar Suspension</a></p>
 
 <hr />
 
@@ -113,11 +117,12 @@
 
 <p>The turret major contains all the major electronics in the robot, serves as a base for the two turret minors, and houses the hopper, agitator and feeding system. The structure consists of a top and bottom carbon fiber plate held up by four standoffs and six M4x120 screws. The electronics are mounted vertically for easier wiring access.</p>
 
-<p>The diameter is only 365mm this year (compared to about 420 past year), with the main reason being pushing the bottom plate of turret major down past the agitators. In the past, the bottom plate lat on the same plane as the top of the agitators, leaving ltos of empty space under the bottom plate. By shifting the bottom plate down, we were able to significantly decrease the diameter of turret minor, as well as mount electronics vertically which should allow for better wiring. The half of turret major without the hoppers can be accessed by removing one large cover, allowing for easy wiring, debugging and testing.</p>
+<p>The diameter of turret major is only 365mm this year (compared to about 420 past year), with the main reason being pushing the bottom plate of turret major down past the agitators. In the past, the bottom plate lat on the same plane as the top of the agitators, leaving ltos of empty space under the bottom plate. By shifting the bottom plate down, we were able to significantly decrease the diameter of turret minor, as well as mount electronics vertically which should allow for better wiring. The half of turret major without the hoppers can be accessed by removing one large cover, allowing for easy wiring, debugging and testing.</p>
 
-<p>We heavily reduced the chassis diameter and weight compared to last year. The weight is still unknown because the CAD is still in progress but we decreased the chassis diameter  from 680 to 550mm. The main reason for this is because we expanded the height of turret major down to below the agitators, which allowed it to be a smaller diameter, and the chassis below it to be smaller as well.</p>
+<p>We heavily reduced the chassis diameter and weight compared to last year. The weight is now 18.6kg compared to past year’s 23kg, and we decreased the chassis diameter from 680 to 585mm. One of the main reasons for this is because we expanded the height of turret major down to below the agitators, which allowed it to be a smaller diameter, and the chassis below it to be smaller as well. We also only have one turret minor instead of two. But most importantly, we kept weight savings in mind during the entire design process, opting for lighter plates when possible and doing calculations on the stresses a part will be under and need to withstand.</p>
 
 <hr />
+
 <h2 id="3-v2-changes">3. V2 Changes</h2>
 
 <table>
@@ -133,11 +138,43 @@ With the new rules, we also took the opportunity to heavily skeletonize turret m
 <p>Main changes:</p>
 <ul>
   <li>Removed turret minor</li>
-  <li>Hopper capacity increased from 500 to 800</li>
+  <li>Hopper capacity increased from 500 to 900</li>
   <li>Removed most of major top plate, leaving only the minor and hopper support structure</li>
 </ul>
 
 <hr />
+
+<h2 id="4-manufacturing">4. Manufacturing</h2>
+<p>We made sure to design for easy manufacturing and assembly. This is why most of our parts are waterjet or 3D printed, leaving only the turret major and chassis standoffs, aluminum inserts in the carbon fiber neck, the 6020 motor plate, and belt tensioners to require machine shop tools usage. We used two UW waterjets and Omax’s facilities in Kent, WA for the rest of the parts. We used a mix of PLA and ASA for our 3D printed parts, defaulting to PLA and using ASA for only high stress parts.</p>
+
+<h2 id="5-ballpath-testing">5. Ballpath testing</h2>
+<table>
+ <tr> 
+  <td><img src="/img/Sentry/suspension_assembly.jpg" width="250" alt="Sentry Redesign 1" /></td>
+  <td><img src="/img/Sentry/suspension_forcemeter.jpg" width="250" alt="Sentry Redesign 2" /></td>
+  </tr>
+</table>
+
+<h2 id="5-four-bar-suspension">5. Four Bar Suspension</h2>
+<p><img src="/img/Sentry/suspension_spread.jpg" alt="fourbarsuspension" /></p>
+
+<p>The four bar suspension was designed over summer 2025 and built in Feburary 2026. The suspension is required for our robots due to there being bumps in the game field, and the Chinese version of the game having a 2ft drop test. Otherwise, design requirements are as follows:</p>
+<ul>
+  <li>Lighter than previous year</li>
+  <li>Smaller</li>
+  <li>Stiffer (better stability on solid ground)</li>
+  <li>Use less stiff springs to maintain shock quality</li>
+</ul>
+
+<p>This design, like the previous year’s, uses RC car shocks. However, although RC cars often weigh in the hundreds of grams, our robots weigh 15kg. So there is a lot more load on these shocks in this use case.
+To combat this, I fit in two shocks in this year’s design, to allow us to decrease the load on each individual spring by having two springs contribute to the suspension. For springs in parallel, the effective spring constant is the sum of each individual spring (as opposed to decreasing in series).</p>
+
+<table>
+ <tr> 
+  <td><img src="/img/Sentry/suspension_assembly.jpg" width="250" alt="Sentry Redesign 1" /></td>
+  <td><img src="/img/Sentry/suspension_forcemeter.jpg" width="250" alt="Sentry Redesign 2" /></td>
+  </tr>
+</table>
 
 
         </div>

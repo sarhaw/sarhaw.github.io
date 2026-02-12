@@ -20,6 +20,10 @@ permalink: /aruw-sentry/
 
 [3. V2 Changes](#3-v2-changes)
 
+[4. Manufacturing](#4-manufacturing)
+
+[5. Four Bar Suspension](#5-fourbar)
+
 ---
 
 ## 1. Design Requirements
@@ -74,3 +78,30 @@ Main changes:
 
 ## 4. Manufacturing
 We made sure to design for easy manufacturing and assembly. This is why most of our parts are waterjet or 3D printed, leaving only the turret major and chassis standoffs, aluminum inserts in the carbon fiber neck, the 6020 motor plate, and belt tensioners to require machine shop tools usage. We used two UW waterjets and Omax's facilities in Kent, WA for the rest of the parts. We used a mix of PLA and ASA for our 3D printed parts, defaulting to PLA and using ASA for only high stress parts.
+
+## 5. Ballpath testing
+<table>
+ <tr> 
+  <td><img src="/img/Sentry/suspension_assembly.jpg" width="250" alt="Sentry Redesign 1" /></td>
+  <td><img src="/img/Sentry/suspension_forcemeter.jpg" width="250" alt="Sentry Redesign 2" /></td>
+  </tr>
+</table>
+
+## 5. Four Bar Suspension
+![fourbarsuspension](/img/Sentry/suspension_spread.jpg)
+
+The four bar suspension was designed over summer 2025 and built in Feburary 2026. The suspension is required for our robots due to there being bumps in the game field, and the Chinese version of the game having a 2ft drop test. Otherwise, design requirements are as follows: 
+- Lighter than previous year
+- Smaller
+- Stiffer (better stability on solid ground)
+- Use less stiff springs to maintain shock quality
+
+This design, like the previous year's, uses RC car shocks. However, although RC cars often weigh in the hundreds of grams, our robots weigh 15kg. So there is a lot more load on these shocks in this use case.
+To combat this, I fit in two shocks in this year's design, to allow us to decrease the load on each individual spring by having two springs contribute to the suspension. For springs in parallel, the effective spring constant is the sum of each individual spring (as opposed to decreasing in series). 
+
+<table>
+ <tr> 
+  <td><img src="/img/Sentry/suspension_assembly.jpg" width="250" alt="Sentry Redesign 1" /></td>
+  <td><img src="/img/Sentry/suspension_forcemeter.jpg" width="250" alt="Sentry Redesign 2" /></td>
+  </tr>
+</table>

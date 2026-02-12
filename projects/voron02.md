@@ -33,7 +33,7 @@ Before starting, it's recommended to regrease your linear rails, which involves 
 
 - [Youtube video on process](https://www.youtube.com/watch?v=UYvhYjkBFTY)
 - [LDO motors documentation](https://docs.ldomotors.com/en/guides/rail_grease_guide)
-- [Amazon link to lube](https://www.amazon.com/dp/B000XBH9HI?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1)
+- [Linear rail lube](https://www.amazon.com/dp/B000XBH9HI?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1)
 
 The Formbot kit contained all the parts I needed, but I had to get tools (allen key set, multimeter) for the build. I also purchased a linear rail because I accidentally slid off the carriage from the rail and lost a lot of the ball bearings. 
 
