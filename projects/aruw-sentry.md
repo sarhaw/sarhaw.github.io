@@ -43,11 +43,11 @@ Design requirements for this year include:
 
 ---
 ## 2. Turret Major
-
+<img src="/img/Sentry/CAD_iso.png" width="100" alt="Sentry Redesign 1" />
 <table>
  <tr> 
-  <td><img src="/img/Sentry/Major_2.png" width="250" alt="Turret Major" /></td>
-  <td><img src="/img/Sentry/Major_1.png" width="250" alt="Turret Major" /></td>
+  <td><img src="/img/Sentry/CAD_electronics.png" width="250" alt="Sentry Redesign 1" /></td>
+  <td><img src="/img/Sentry/CAD_back.png" width="250" alt="Sentry Redesign 2" /></td>
   </tr>
 </table>
 
@@ -75,6 +75,13 @@ Main changes:
 - Removed turret minor
 - Hopper capacity increased from 500 to 900
 - Removed most of major top plate, leaving only the minor and hopper support structure
+
+<table>
+ <tr> 
+  <td><img src="/img/Sentry/Major_2.png" width="250" alt="Turret Major" /></td>
+  <td><img src="/img/Sentry/Major_1.png" width="250" alt="Turret Major" /></td>
+  </tr>
+</table>
 
 ---
 
