@@ -5,7 +5,7 @@ permalink: /voron02/
 ---
 
 # Voron 0.2
-![Voron 0.2](/img/Voron0.2/voron_no_tophat.jpg)
+![Voron 0.2](/img/Voron0.2/voron_full.jpg)
 
 Below documents the process of my build of the Voron 0.2 and helpful resources I found.
 
@@ -21,6 +21,8 @@ For filament, I used Polymaker ASA in Natural and Army Green. I used [this websi
 - [Printed parts list](https://docs.google.com/spreadsheets/d/1MSgTiXazJwyfcTe7QqNIMWwQ_lfM8cOXmiMWPZ2HkEI/edit?gid=0#gid=0)
 
 ## Mechanical Assembly
+![Voron 0.2](/img/Voron0.2/voron_no_tophat.jpg)
+
 The mechanical assembly of the Voron 0.2 was fairly self-explanatory, as Voron has extensive [documentation](https://docs.vorondesign.com/) and a clear [manual](https://raw.githubusercontent.com/VoronDesign/Voron-0/Voron0.2/Manuals/VORON_V0.2_Assembly_Manual.pdf). 
 
 
