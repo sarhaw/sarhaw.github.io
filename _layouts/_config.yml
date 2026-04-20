@@ -79,7 +79,7 @@ pagination:
 ############################################################
 
 ### Phantom settings
-footer_text: '© 2025 Sarah Wu'
+footer_text: '© 2026 Sarah Wu'
 admin_name: 'Sarah Wu'
 google_analytics: "UA-9999999-99" # Update with your own tracking ID
 enable_contact: false

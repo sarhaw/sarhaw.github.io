@@ -3,12 +3,17 @@ layout: inner
 title: ARUW Sentry robot
 permalink: /aruw-sentry/
 ---
+<img src="/img/Sentry/Robot1.jpg" width="50" alt="Render" />
 
-<img src="/img/Sentry/CAD.png" style="max-height: 360px" alt="CAD ">
+# Sentry  
 
-# Sentry
-
-> *Note: This is an ongoing project. Current status is manufacturing CF plates and waterjetting aluminum sheets. Please note that some sections are currently being documented.*
+<img src="/img/Sentry/Render_1.jpg" width="100" alt="Render" />
+<table>
+ <tr> 
+  <td><img src="/img/Sentry/Render_back.png" width="250" alt="Render" /></td>
+  <td><img src="/img/Sentry/Render_up.png" width="250" alt="Render" /></td>
+  </tr>
+</table>
 
 ---
 
@@ -106,7 +111,7 @@ To track all of our parts (totalling over a thousand) we have a manufacturing tr
 
 This process is gruelling, with our squad members spending double or triple our usual meeting time in the lab during manufacturing season. But due to all of our committment, the manufacturing went as smooth as it could be. We were manufacturing so quickly that we were being blocked by the waterjet runs giving us new plates to work with. 
 
-## 5. Ballpath testing
+## 5. Ballpath Testing
 <img src="/img/Sentry/ballpath_fulltest.jpg" alt="ballpath testing" style="float: right; width: 300px; margin-left: 30px;" />
 
 The Sentry ballpath was a critical system to test before assembly. In 2025, the failure of the ballpath was a major reason why the Sentry was unable to perform well. This year, I was tasked with verifying and testing the ballpath system so we could build the robot with confidence. 
@@ -130,7 +135,7 @@ After analyzing the ballpath, I realized where the jam condition likely was - th
 
 After testing, it did! I pushed the turret to +10 degrees and way past the -30 degrees and the balls flowed out like they were at a neutral angle. I ran the test for a couple minutes to verify consistency, for a couple trials as well. 
 
-## 5. Four Bar Suspension
+## 6. Four Bar Suspension
 ![fourbarsuspension](/img/Sentry/suspension_spread.jpg)
 
 The four bar suspension was designed over summer 2025 and built in Feburary 2026. The suspension is required for our robots due to there being bumps in the game field, and the Chinese version of the game having a 2ft drop test. Otherwise, design requirements are as follows: 
