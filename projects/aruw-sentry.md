@@ -120,7 +120,7 @@ The ballpath consists of an agitator, ballpath that extends forwards then up, a 
 
 From CAD and what was discussed in the Sentry design reviews, the requirements for the ballpath are:
 - Move balls up the ballpath at 30 Hz
-- Pitch 10 degrees up, 30 degrees down
+- Pitch 10 degrees up, 40 degrees down
 - Run without jamming for an entire match length (5 min)
 
 Over winter break, I spent multiple long days verifying those conditions. 
